@@ -16,7 +16,7 @@ A responsive, ATS-friendly personal portfolio website built with HTML, CSS, and 
 - css/style.css
 - js/script.js
 - images/background.svg
-- assets/resume.pdf
+- assets/Ram_Gupta_Resume.pdf
 
 ## Customize later
 - Replace placeholder links and contact details
