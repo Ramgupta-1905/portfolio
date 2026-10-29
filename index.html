@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -22,13 +22,13 @@
 
     <header class="header">
       <nav class="navbar container" aria-label="Primary navigation">
-        <a href="#home" class="logo">Ram Gupta</a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <a href="#home" class="logo" aria-label="Ram Gupta home"><span>R</span><span class="logo-dot">G</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -38,381 +38,556 @@
           <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
         </div>
+        <a href="assets/RAM%20GUPTA%20Software.pdf" class="nav-resume" download>
+          Resume <span aria-hidden="true">↓</span>
+        </a>
       </nav>
     </header>
 
-    <main id="home">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-content reveal">
-            <p class="eyebrow">Computer Science Student</p>
-            <h1>Ram Gupta</h1>
-            <h2>
-              <span class="typing-text"></span>
-              <span class="typing-cursor">|</span>
-            </h2>
-            <p class="hero-description">
-              B.Tech Computer Science & Engineering student with strong fundamentals
-              in Java, Data Structures & Algorithms, and web development. Experienced
-              in building responsive web applications and practical projects, with a
-              strong interest in software development and problem solving. Actively
-              seeking opportunities to apply technical skills and gain real-world
-              software development experience.
+    <main class="site-main">
+      <div class="portfolio-sections container">
+      <section id="home" class="hero panel reveal" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot"></span> Hi, I'm</p>
+          <h1 id="hero-title">Ram <span>Gupta</span></h1>
+          <h2>Full Stack Developer</h2>
+          <p class="hero-description">
+            Final-year B.Tech CSE student with a passion for building responsive,
+            user-friendly web applications. I enjoy turning ideas into real-world
+            solutions through clean design, efficient code, and continuous learning.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work <span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="currently-exploring">
+            <span>Currently exploring</span>
+            <div class="tag-list">
+              <span>Full Stack Development</span>
+              <span>Real-world Projects</span>
+              <span>Better User Experiences</span>
+            </div>
+          </div>
+          <div class="hero-stats" aria-label="Portfolio highlights">
+            <div class="stat-card"><strong>6</strong><span>Projects</span></div>
+            <div class="stat-card"><strong>300+</strong><span>DSA Problems</span></div>
+            <div class="stat-card"><strong>3</strong><span>Internships/Trainings</span></div>
+            <div class="stat-card"><strong>2027</strong><span>Graduation</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Developer portrait">
+          <div class="portrait-glow"></div>
+          <span class="portrait-frame-outline" aria-hidden="true"></span>
+          <div class="portrait-frame portrait-cutout">
+            <img src="assets/ram-cutout.png" alt="Portrait of Ram Gupta" />
+          </div>
+          <span class="float-label label-code" aria-hidden="true">&lt;/&gt;</span>
+          <span class="float-label label-react" aria-hidden="true"><span class="react-mark">⚛</span> React</span>
+          <span class="float-label label-build" aria-hidden="true">Building<br />Ideas<br />into<br />Impact <i></i></span>
+          <span class="float-label label-java" aria-hidden="true"><span>♨</span> Java</span>
+          <span class="hero-note" aria-hidden="true">Let's<br />Build<br />Something<br />Great!</span>
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+        </div>
+      </section>
+
+      <section id="about" class="about-panel panel reveal">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Get to know me</p><h2>About Me</h2></div>
+          <span class="heading-mark" aria-hidden="true">01</span>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a final-year B.Tech Computer Science student at Raj Kumar Goel
+              Institute of Technology, Ghaziabad. I enjoy building web applications,
+              improving user experiences, and solving real-world problems.
             </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="assets/RAM GUPTA Software.pdf" class="btn btn-secondary" download>Download Resume</a>
-            </div>
+            <p>
+              My projects span frontend, full-stack, and Java development, and I'm
+              always eager to learn and take on new challenges.
+            </p>
+            <a href="#education" class="text-link">More About Me <span aria-hidden="true">→</span></a>
           </div>
-          <div class="hero-visual reveal">
-            <div class="developer-panel" aria-hidden="true">
-              <span class="panel-label">&lt;/&gt;</span>
-              <span class="panel-line line-one"></span>
-              <span class="panel-line line-two"></span>
-              <span class="panel-line line-three"></span>
-              <span class="panel-status"><i></i> Building...</span>
+          <div class="code-window" aria-label="Developer profile code illustration">
+            <div class="window-controls"><i></i><i></i><i></i></div>
+            <pre><code><span>const</span> developer = {
+  name: <em>"Ram Gupta"</em>,
+  role: <em>"Full Stack Developer"</em>,
+  location: <em>"Ghaziabad, UP"</em>,
+  passion: <em>"Building for the web"</em>,
+  goal: <em>"Create real-world impact"</em>
+}</code></pre>
+            <span class="code-spark" aria-hidden="true">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-panel panel reveal">
+        <div class="skills-browser">
+          <div class="skill-categories" role="group" aria-label="Filter skills by category">
+            <div class="panel-heading">
+              <div><p class="eyebrow">Tools I work with</p><h2>My Skills</h2></div>
             </div>
-            <div class="portrait-frame">
-              <img src="assets/ram.jpeg" alt="Ram Gupta" />
+            <button type="button" class="skill-filter active" data-skill-filter="all" aria-pressed="true">All Skills</button>
+            <button type="button" class="skill-filter" data-skill-filter="languages" aria-pressed="false">Languages</button>
+            <button type="button" class="skill-filter" data-skill-filter="core" aria-pressed="false">Core CS</button>
+            <button type="button" class="skill-filter" data-skill-filter="web" aria-pressed="false">Web Technologies</button>
+            <button type="button" class="skill-filter" data-skill-filter="backend" aria-pressed="false">Backend & Database</button>
+            <button type="button" class="skill-filter" data-skill-filter="tools" aria-pressed="false">Tools</button>
+            <button type="button" class="skill-filter" data-skill-filter="professional" aria-pressed="false">Professional Skills</button>
+          </div>
+          <div class="skill-results">
+            <div class="skill-tile-grid">
+            <div class="skill-tile" data-skill-category="languages"><span class="skill-icon java" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Java</span></div>
+            <div class="skill-tile" data-skill-category="languages"><span class="skill-icon python" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Python <small>(Basic)</small></span></div>
+            <div class="skill-tile" data-skill-category="web"><span class="skill-icon html" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" loading="lazy" decoding="async" /></span><span>HTML</span></div>
+            <div class="skill-tile" data-skill-category="web"><span class="skill-icon css" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" loading="lazy" decoding="async" /></span><span>CSS</span></div>
+            <div class="skill-tile" data-skill-category="web"><span class="skill-icon react" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" loading="lazy" decoding="async" /></span><span>React.js</span></div>
+            <div class="skill-tile" data-skill-category="backend"><span class="skill-icon spring" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Spring Boot</span></div>
+            <div class="skill-tile" data-skill-category="backend"><span class="skill-icon postgres" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" decoding="async" /></span><span>PostgreSQL</span></div>
+            <div class="skill-tile" data-skill-category="backend"><span class="skill-icon api">↔</span><span>REST APIs</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon git" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Git</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon github" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" loading="lazy" decoding="async" /></span><span>GitHub</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon vscode" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" loading="lazy" decoding="async" /></span><span>VS Code</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon vite" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Vite</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon netlify" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Netlify</span></div>
+            <div class="skill-tile" data-skill-category="tools"><span class="skill-icon vercel" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="" loading="lazy" decoding="async" /></span><span>Vercel</span></div>
+              <div class="skill-tile" data-skill-category="core"><span class="skill-icon dsa">DS</span><span>Data Structures & Algorithms</span></div>
+              <div class="skill-tile" data-skill-category="core"><span class="skill-icon oop">OOP</span><span>OOP <small>(Fundamentals)</small></span></div>
+              <div class="skill-tile" data-skill-category="professional"><span class="skill-icon soft">✦</span><span>Problem Solving</span></div>
+              <div class="skill-tile" data-skill-category="professional"><span class="skill-icon soft">↗</span><span>Communication</span></div>
+              <div class="skill-tile" data-skill-category="professional"><span class="skill-icon soft">◎</span><span>Teamwork</span></div>
+              <div class="skill-tile" data-skill-category="professional"><span class="skill-icon soft">↻</span><span>Adaptability</span></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">About Me</p>
-            <h2>Building skills with curiosity and consistency</h2>
+      <section id="projects" class="projects-panel panel reveal">
+        <div class="projects-header">
+          <div class="projects-title">
+            <p class="eyebrow">Featured work</p>
+            <h2>My Projects</h2>
+            <p class="projects-intro">A collection of projects I've built to solve real-world problems and strengthen my development skills.</p>
           </div>
-          <div class="about-grid">
-            <div class="about-text reveal">
-              <p>
-                I am currently pursuing a Bachelor of Technology in Computer Science &
-                Engineering at Raj Kumar Goel Institute of Technology (RKGIT),
-                Ghaziabad.
-              </p>
-              <p>
-                I have strong fundamentals in Java, Data Structures & Algorithms,
-                Object-Oriented Programming, and responsive web development.
-              </p>
-              <p>
-                I enjoy solving coding problems, building web applications, and
-                continuously improving my software development skills.
-              </p>
-              <p>
-                I am a 4th-year B.Tech Computer Science & Engineering student,
-                expected to graduate in 2027.
-              </p>
+          <div class="project-controls">
+            <div class="project-filters" role="group" aria-label="Filter projects">
+              <button type="button" class="project-filter active" data-project-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="project-filter" data-project-filter="web" aria-pressed="false">Web Apps</button>
+              <button type="button" class="project-filter" data-project-filter="full-stack" aria-pressed="false">Full Stack</button>
+              <button type="button" class="project-filter" data-project-filter="java" aria-pressed="false">Java</button>
+              <button type="button" class="project-filter" data-project-filter="other" aria-pressed="false">Other</button>
             </div>
-            <div class="about-cards reveal">
-              <div class="info-card"><span>Name</span><strong>Ram Gupta</strong></div>
-              <div class="info-card"><span>Location</span><strong>Ghaziabad, Uttar Pradesh</strong></div>
-              <div class="info-card"><span>Degree</span><strong>B.Tech Computer Science & Engineering</strong></div>
-              <div class="info-card"><span>Expected Graduation</span><strong>2027</strong></div>
-              <div class="info-card"><span>CGPA</span><strong>8.1/10</strong></div>
+            <div class="carousel-buttons">
+              <button type="button" class="carousel-button" data-carousel-direction="-1" aria-label="Previous projects" aria-controls="project-track">←</button>
+              <button type="button" class="carousel-button" data-carousel-direction="1" aria-label="Next projects" aria-controls="project-track">→</button>
             </div>
           </div>
         </div>
+        <div class="projects-grid" id="project-track" aria-label="Project showcase">
+            <article class="project-card featured-project" data-project="scribble" data-categories="web full-stack">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img
+                    src="assets/scribbleioclone.png"
+                    alt="Scribble.io multiplayer drawing game preview"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">SC</span>
+                    <h3>Scribble.io Clone</h3>
+                  </div>
+                  <p class="project-description">
+                    A real-time multiplayer drawing and word-guessing game where players
+                    draw prompts, submit guesses, and compete for points.
+                  </p>
+                  <div class="tag-list">
+                    <span>React</span><span>TypeScript</span><span>Node.js</span><span>Socket.IO</span>
+                  </div>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/Scribble.io-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+                <a
+                  href="https://skribbl-clone-frontend-vla2.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" data-project="notenest" data-categories="web full-stack">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img
+                    src="assets/Notenest.png"
+                    alt="NoteNest notes application preview"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">NN</span>
+                    <h3>NoteNest</h3>
+                  </div>
+                  <p class="project-description">
+                    A full-stack notes application with a responsive interface for
+                    creating, organizing, and managing notes.
+                  </p>
+                  <div class="tag-list">
+                    <span>React.js</span><span>Vite</span><span>Node.js</span><span>PostgreSQL</span>
+                  </div>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/NoteNest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+                <a
+                  href="https://note-nest-nu-eight.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" data-project="edusphere" data-categories="web">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img
+                    src="assets/edusphere.png"
+                    alt="Edusphere college portal homepage preview"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">ES</span>
+                    <h3>Edusphere</h3>
+                  </div>
+                  <p class="project-description">
+                    A college portal website with separate entry points and page
+                    structures for students and employees.
+                  </p>
+                  <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/Edusphere"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+                <a
+                  href="http://edusphere-main.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >Live Demo</a>
+              </div>
+            </article>
+            <article class="project-card" data-project="jobtrack" data-categories="web full-stack">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img src="assets/jobtrackai.png" alt="JobTrack AI project landing page preview" loading="lazy" decoding="async" />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">JT</span>
+                    <h3>JobTrack AI</h3>
+                  </div>
+                  <p class="project-description">
+                    A frontend prototype for organizing job and internship
+                    applications, assessments, and interviews; backend and database
+                    deployment are incomplete.
+                  </p>
+                  <div class="tag-list">
+                    <span>React</span><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span>
+                  </div>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/jobtrack-ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+              </div>
+            </article>
+            <article class="project-card" data-project="reloop" data-categories="java">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img
+                    src="assets/ReLoop_ Buy, Sell, Reuse.png"
+                    alt="ReLoop pre-owned marketplace preview"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">RL</span>
+                    <h3>ReLoop</h3>
+                  </div>
+                  <p class="project-description">
+                    A Java marketplace application for listing pre-owned items and
+                    managing offers through a console-based workflow.
+                  </p>
+                  <div class="tag-list"><span>Java</span><span>PostgreSQL</span></div>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/ReLoop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+              </div>
+            </article>
+            <article class="project-card" data-project="raah" data-categories="other">
+              <button
+                class="project-card-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog"
+              >
+                <div class="project-image-wrap">
+                  <img
+                    src="assets/RAAH Rural Healthcare Branding Banner.png"
+                    alt="RAAH rural accessible healthcare project artwork"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-title-row">
+                    <span class="project-icon" aria-hidden="true">RH</span>
+                    <h3>RAAH</h3>
+                  </div>
+                  <p class="project-description">
+                    A telemedicine platform concept focused on improving access to
+                    healthcare services for rural communities.
+                  </p>
+                </div>
+              </button>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Ramgupta-1905/RAAH"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >GitHub</a>
+              </div>
+            </article>
+          </div>
+          <div class="project-rail-footer">
+            <span>Choose a project to see full details</span>
+            <div class="project-rail-progress" aria-hidden="true"><span></span></div>
+            <span class="project-rail-count"><strong>01</strong> / 06</span>
+          </div>
       </section>
 
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Skills</p>
-            <h2>What I bring to the table</h2>
-          </div>
-          <div class="skills-grid">
-            <div class="skill-card reveal">
-              <h3>Programming Languages</h3>
-              <ul>
-                <li>Java</li>
-                <li>Python (Basic)</li>
-                <li>JavaScript</li>
-              </ul>
+      <section id="experience" class="experience-panel panel reveal">
+        <div class="panel-heading">
+          <div><p class="eyebrow">My journey</p><h2>Experience & Training</h2></div>
+          <span class="heading-mark" aria-hidden="true">03</span>
+        </div>
+        <div class="experience-timeline">
+          <article class="experience-card">
+            <span class="timeline-point" aria-hidden="true"></span>
+            <span class="experience-icon" aria-hidden="true">✦</span>
+            <div>
+              <span class="experience-date">Internship</span>
+              <h3>Full Stack Development Intern</h3>
+              <p class="experience-organization">CodeNova</p>
+              <p>Worked on responsive user interfaces and application features. Integrated frontend components with backend services.</p>
             </div>
-            <div class="skill-card reveal">
+          </article>
+          <article class="experience-card">
+            <span class="timeline-point" aria-hidden="true"></span>
+            <span class="experience-icon" aria-hidden="true">✧</span>
+            <div>
+              <span class="experience-date">Internship</span>
+              <h3>Frontend Development Intern</h3>
+              <p class="experience-organization">SWYNEX</p>
+              <p>Developed responsive, usable interfaces and implemented interactive features and API integration.</p>
+            </div>
+          </article>
+          <article class="experience-card">
+            <span class="timeline-point" aria-hidden="true"></span>
+            <span class="experience-icon" aria-hidden="true">⌘</span>
+            <div>
+              <span class="experience-date">Training</span>
               <h3>Data Structures & Algorithms</h3>
-              <ul>
-                <li>Arrays</li>
-                <li>Strings</li>
-                <li>Linked Lists</li>
-                <li>Stack</li>
-                <li>Queue</li>
-                <li>Searching</li>
-                <li>Sorting</li>
-                <li>Recursion</li>
-              </ul>
+              <p class="experience-organization">GeeksforGeeks</p>
+              <p>Completed structured DSA training and practiced fundamentals through coding exercises.</p>
             </div>
-            <div class="skill-card reveal">
-              <h3>Web Development</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Responsive Web Design</li>
-              </ul>
-            </div>
-            <div class="skill-card reveal">
-              <h3>Tools</h3>
-              <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-                <li>Canva</li>
-              </ul>
-            </div>
-            <div class="skill-card reveal">
-              <h3>Professional Skills</h3>
-              <ul>
-                <li>Communication</li>
-                <li>Problem Solving</li>
-                <li>Teamwork</li>
-                <li>Adaptability</li>
-              </ul>
-            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="education-panel panel reveal">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Academic background</p><h2>Education</h2></div>
+          <span class="education-icon" aria-hidden="true">◆</span>
+        </div>
+        <div class="education-card">
+          <span class="education-symbol" aria-hidden="true">🎓</span>
+          <div class="education-copy">
+            <h3>B.Tech — Computer Science Engineering</h3>
+            <p>Raj Kumar Goel Institute of Technology, Ghaziabad</p>
+            <span class="education-years">Expected 2027</span>
+          </div>
+          <div class="education-metrics">
+            <div><strong>81%</strong><span>Percentage</span></div>
+            <div><strong>2027</strong><span>Expected Graduation</span></div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section projects-section">
-        <div class="container">
-          <div class="section-heading projects-heading reveal">
-            <p class="eyebrow">My Work</p>
-            <h2>Projects</h2>
-            <span class="heading-underline" aria-hidden="true"></span>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <div class="project-image-wrap">
-                <img src="assets/jobtrackai.png" alt="JobTrack AI project preview" />
-              </div>
-              <div class="project-card-body">
-                <div class="project-title-row">
-                  <span class="project-icon" aria-hidden="true">JT</span>
-                  <h3>JobTrack AI</h3>
-                </div>
-                <p class="project-subtitle">AI-powered job and internship tracker</p>
-                <p class="project-description">
-                  AI-powered job and internship application tracker for students and fresh graduates.
-                </p>
-                <h4>Tech Stack</h4>
-                <div class="tag-list">
-                  <span>React</span><span>JavaScript</span><span>Vite</span>
-                  <span>Tailwind CSS</span><span>React Router</span><span>Lucide React</span>
-                </div>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Ramgupta-1905/jobtracker-ai" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
-                <a href="https://jobtrack-ai-chi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">↗ Live Demo</a>
-              </div>
-            </article>
-            <article class="project-card reveal">
-              <div class="project-image-wrap">
-                <img src="assets/raah.png" alt="RAAH telemedicine platform preview" />
-              </div>
-              <div class="project-card-body">
-                <div class="project-title-row">
-                  <span class="project-icon" aria-hidden="true">RH</span>
-                  <h3>RAAH – Telemedicine Platform</h3>
-                </div>
-                <p class="project-subtitle">Telemedicine platform</p>
-                <p class="project-description">
-                  Developed a prototype telemedicine platform aimed at improving healthcare accessibility in rural areas through symptom guidance and teleconsultation workflows.
-                </p>
-                <h4>Tech Stack</h4>
-                <div class="tag-list">
-                  <span>HTML</span><span>CSS</span><span>Java</span>
-                </div>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Ramgupta-1905/RAAH" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
-              </div>
-            </article>
-            <article class="project-card reveal">
-              <div class="project-image-wrap">
-                <img src="assets/edusphere.png" alt="EduSphere college portal preview" />
-              </div>
-              <div class="project-card-body">
-                <div class="project-title-row">
-                  <span class="project-icon" aria-hidden="true">ES</span>
-                  <h3>EduSphere – College Portal Website</h3>
-                </div>
-                <p class="project-subtitle">College portal website</p>
-                <p class="project-description">
-                  Developed a responsive college portal web interface for students and teachers with a focus on structured layouts, intuitive navigation, and user-friendly interaction.
-                </p>
-                <h4>Tech Stack</h4>
-                <div class="tag-list">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Ramgupta-1905/Edusphere-main" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
-                <a href="https://edusphere-main.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">↗ Live Demo</a>
-              </div>
-            </article>
-          </div>
+      <section id="achievements" class="achievements-panel panel reveal">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Beyond the classroom</p><h2>Achievements & Activities</h2></div>
+          <span class="heading-mark" aria-hidden="true">04</span>
+        </div>
+        <div class="achievement-strip">
+          <article class="achievement-card"><span aria-hidden="true">✧</span><strong>300+</strong><p>DSA Problems</p><small>Solved on LeetCode</small></article>
+          <article class="achievement-card"><span aria-hidden="true">✦</span><strong>Smart India</strong><p>Hackathon</p><small>Team participant</small></article>
+          <article class="achievement-card"><span aria-hidden="true">♛</span><strong>3rd Position</strong><p>CSI Hackathon</p><small>Placed 3rd</small></article>
+          <article class="achievement-card"><span aria-hidden="true">⌕</span><strong>Research Paper</strong><p>on RAAH</p><small>Selected for conference presentation</small></article>
+          <article class="achievement-card"><span aria-hidden="true">➤</span><strong>AINCAT 2026</strong><p>Participant</p><small>All India Naukri Campus Aptitude Test</small></article>
+          <article class="achievement-card"><span aria-hidden="true">▤</span><strong>Newsletter Team</strong><p>Departmental</p><small>Content and design support</small></article>
         </div>
       </section>
 
-      <section id="experience" class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Experience</p>
-            <h2>Practical exposure through structured learning</h2>
+      <section id="contact" class="contact-panel panel reveal">
+        <div class="contact-details">
+          <div class="panel-heading">
+            <div><p class="eyebrow">Get in touch</p><h2>Let's Connect</h2></div>
+            <span class="heading-mark" aria-hidden="true">05</span>
           </div>
-          <div class="experience-card reveal">
-            <h3>Data Structures & Algorithms Training</h3>
-            <p>
-              GeeksforGeeks | Ongoing
-            </p>
-            <p>
-              Currently undergoing structured training in Data Structures & Algorithms, strengthening problem-solving skills through hands-on coding practice and regular DSA practice.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Education</p>
-            <h2>Academic foundation and milestones</h2>
-          </div>
-          <div class="timeline">
-            <div class="timeline-card reveal">
-              <h3>Raj Kumar Goel Institute of Technology, Ghaziabad</h3>
-              <p>Bachelor of Technology (B.Tech)</p>
-              <p>Computer Science & Engineering</p>
-              <span>Expected Graduation: 2027 • CGPA: 8.1/10</span>
-            </div>
-            <div class="timeline-card reveal">
-              <h3>Saraswati Vidya Mandir</h3>
-              <p>Class 12 • 84.6%</p>
-            </div>
-            <div class="timeline-card reveal">
-              <h3>Saraswati Vidya Mandir</h3>
-              <p>Class 10 • 84.5%</p>
-            </div>
+          <p class="contact-intro">I'm always open to discussing new opportunities, interesting projects, or just tech in general.</p>
+          <a class="contact-line" href="mailto:ramgupta1906@gmail.com"><span aria-hidden="true">✉</span> ramgupta1906@gmail.com</a>
+          <a class="contact-line" href="tel:+916397857733"><span aria-hidden="true">⌕</span> 6397857733</a>
+          <span class="contact-line"><span aria-hidden="true">⌖</span> Ghaziabad, Uttar Pradesh</span>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/ram-gupta-b74601303" target="_blank" rel="noopener noreferrer">in <span>LinkedIn</span></a>
+            <a href="https://github.com/Ramgupta-1905" target="_blank" rel="noopener noreferrer">GH <span>GitHub</span></a>
           </div>
         </div>
-      </section>
-
-      <section id="achievements" class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Achievements</p>
-            <h2>Milestones that reflect my dedication</h2>
-          </div>
-          <div class="achievements-grid">
-            <div class="achievement-card reveal">200+ DSA problems solved on LeetCode.</div>
-            <div class="achievement-card reveal">140+ DSA problems solved on GeeksforGeeks.</div>
-            <div class="achievement-card reveal">Secured 3rd Position in CSI Hackathon.</div>
-            <div class="achievement-card reveal">Participated in Smart India Hackathon (SIH).</div>
-            <div class="achievement-card reveal">Research paper on RAAH selected for presentation at an International Conference.</div>
-            <div class="achievement-card reveal">Participated in AINCAT 2026 (All India Naukri Campus Aptitude Test).</div>
-          </div>
+        <div class="contact-form-card">
+          <h3>Drop a Message</h3>
+          <p class="contact-form-note">Your email app will open with your message ready to send.</p>
+          <form id="contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="2" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Contact Me <span aria-hidden="true">→</span></button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
         </div>
       </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Extra Curricular / Leadership</p>
-            <h2>Contributions beyond academics</h2>
-          </div>
-          <div class="achievements-grid">
-            <div class="achievement-card reveal">Active member of the Departmental Newsletter Team, contributing to content preparation and newsletter design support.</div>
-            <div class="achievement-card reveal">Member of Nebula Technical Society.</div>
-            <div class="achievement-card reveal">Former member of Futurista Society, contributing to poster and banner designing using Canva for technical and departmental events.</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Coding Profiles</p>
-            <h2>Where I learn and showcase my work</h2>
-          </div>
-          <div class="profiles-grid">
-            <div class="profile-card reveal">
-              <h3>GitHub</h3>
-              <p>Explore repositories and projects.</p>
-              <a href="https://github.com/Ramgupta-1905" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit</a>
-            </div>
-            <div class="profile-card reveal">
-              <h3>LinkedIn</h3>
-              <p>Connect and follow my professional journey.</p>
-              <a href="https://www.linkedin.com/in/ram-g190406" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit</a>
-            </div>
-            <div class="profile-card reveal">
-              <h3>LeetCode</h3>
-              <p>View problem-solving progress and streaks.</p>
-              <a href="https://leetcode.com/u/ram_gupta1905/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit</a>
-            </div>
-            <div class="profile-card reveal">
-              <h3>GeeksforGeeks</h3>
-              <p>Track my DSA learning path and practice.</p>
-              <a href="https://www.geeksforgeeks.org/profile/ramgupt2xu2" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Visit</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container contact-grid">
-          <div class="contact-form-card reveal">
-            <div class="section-heading left">
-              <p class="eyebrow">Contact</p>
-              <h2>Let’s connect</h2>
-            </div>
-            <form id="contact-form">
-              <label>
-                <span>Name</span>
-                <input type="text" name="name" required />
-              </label>
-              <label>
-                <span>Email</span>
-                <input type="email" name="email" required />
-              </label>
-              <label>
-                <span>Subject</span>
-                <input type="text" name="subject" required />
-              </label>
-              <label>
-                <span>Message</span>
-                <textarea name="message" rows="5" required></textarea>
-              </label>
-              <button type="submit" class="btn btn-primary">Send Message</button>
-              <p class="form-message" aria-live="polite"></p>
-            </form>
-          </div>
-          <div class="contact-info reveal">
-            <h3>Get in touch</h3>
-            <p><strong>Email</strong><br /><a href="mailto:ramgupta1906@gmail.com">ramgupta1906@gmail.com</a></p>
-            <p><strong>Phone</strong><br /><a href="tel:+916397857733">6397857733</a></p>
-            <p><strong>Location</strong><br />Ghaziabad, Uttar Pradesh</p>
-            <p><strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/ram-g190406" target="_blank" rel="noopener noreferrer">linkedin.com/in/ram-g190406</a></p>
-            <p><strong>GitHub</strong><br /><a href="https://github.com/Ramgupta-1905" target="_blank" rel="noopener noreferrer">github.com/Ramgupta-1905</a></p>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
+
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="project-dialog-title"
+      aria-describedby="project-dialog-description"
+    >
+      <div class="project-dialog-content">
+        <button class="project-dialog-close" type="button" aria-label="Close project details">×</button>
+        <p class="eyebrow" id="project-dialog-category"></p>
+        <h2 id="project-dialog-title"></h2>
+        <div class="project-dialog-image" id="project-dialog-image" hidden></div>
+        <p class="project-dialog-description" id="project-dialog-description"></p>
+        <div class="project-dialog-columns">
+          <section>
+            <h3>Technologies</h3>
+            <div class="tag-list" id="project-dialog-technologies"></div>
+          </section>
+          <section>
+            <h3>Key features</h3>
+            <ul class="feature-list" id="project-dialog-features"></ul>
+          </section>
+        </div>
+        <section class="project-dialog-implementation">
+          <h3>Implementation details</h3>
+          <p id="project-dialog-implementation"></p>
+        </section>
+        <div class="project-dialog-links" id="project-dialog-links"></div>
+      </div>
+    </dialog>
 
     <footer class="footer">
       <div class="container footer-content">
-        <div>
-          <h3>Ram Gupta</h3>
-          <p>Thank you for visiting my portfolio.</p>
-        </div>
+        <a href="#home" class="footer-logo">RG</a>
+        <p>Designed and built by Ram Gupta</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
         <div class="social-links">
           <a href="https://github.com/Ramgupta-1905" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
-          <a href="https://www.linkedin.com/in/ram-g190406" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
-          <a href="https://leetcode.com/u/ram_gupta1905/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">LC</a>
-          <a href="https://www.geeksforgeeks.org/profile/ramgupt2xu2" target="_blank" rel="noopener noreferrer" aria-label="GeeksforGeeks">GfG</a>
+          <a href="https://www.linkedin.com/in/ram-gupta-b74601303" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
         </div>
       </div>
       <p class="copyright">© 2026 Ram Gupta. All Rights Reserved.</p>

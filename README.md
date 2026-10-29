@@ -1,24 +1,25 @@
-# Personal Portfolio Website
+# Ram Gupta — Portfolio
 
-A responsive, ATS-friendly personal portfolio website built with HTML, CSS, and vanilla JavaScript.
+A responsive personal portfolio built with HTML, CSS, and vanilla JavaScript.
 
 ## Features
-- Sticky navigation with active section highlighting
-- Typing animation in the hero section
-- Mobile hamburger navigation
-- Scroll progress bar and back-to-top button
-- Reveal-on-scroll animations
-- Contact form validation
-- Clean, modern glassmorphism styling
+
+- Vertically scrolling, responsive portfolio sections with a dark navy and violet visual theme
+- Sticky navigation with active section highlighting and a mobile menu
+- Category-filterable skill tiles and project showcase carousel
+- Responsive project previews with keyboard-accessible detail dialogs
+- Project details, technologies, features, and available repository/demo links
+- Reduced-motion support, visible keyboard focus, and reveal-on-scroll effects
+- Resume download using the PDF in `assets/`
+- Contact form that opens a prefilled email in the visitor's default email application
+
+The contact form does not submit data to a backend. Visitors can also contact Ram
+directly using the email and phone links in the Contact section.
 
 ## Structure
-- index.html
-- css/style.css
-- js/script.js
-- images/background.svg
-- assets/Ram_Gupta_Resume.pdf
 
-## Customize later
-- Replace placeholder links and contact details
-- Add a real resume PDF
-- Swap in real profile and project images if desired
+- `index.html` — Portfolio sections and project cards
+- `css/style.css` — Layout, responsive styling, and dialog styles
+- `js/script.js` — Navigation, filters, project carousel and dialogs, and email composition
+- `assets/` — Profile image, project artwork and previews, and resume PDF
+- `images/` — Supporting image assets
